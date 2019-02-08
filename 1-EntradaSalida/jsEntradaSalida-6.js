@@ -16,11 +16,11 @@ function sumar()
 
 	suma=(primerrenglon+segundorenglon);
 
-	alert("la suma es:" +suma);
+	alert("la suma es: "+suma);
 
 
 
-
+//termine
 
 
 
