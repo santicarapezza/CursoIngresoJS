@@ -1,0 +1,8 @@
+git clone repo
+git add .
+git commit -m "guia de git"
+
+
+
+
+git status // controla q todo este bien
