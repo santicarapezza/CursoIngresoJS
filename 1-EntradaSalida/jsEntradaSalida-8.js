@@ -5,4 +5,13 @@ ej.: "El resto es 0 ."*/
 function SacarResto()
 {
 	
+
+
+
+	//test
+
+
+
+
+
 }
