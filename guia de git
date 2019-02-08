@@ -1,7 +1,7 @@
 git clone repo
 git add .
 git commit -m "guia de git"
-
+git push
 
 
 
