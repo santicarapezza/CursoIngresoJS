@@ -5,5 +5,6 @@ en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
 
+//me falta el 9 y 10
 	
 }
