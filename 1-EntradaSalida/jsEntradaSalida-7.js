@@ -86,6 +86,11 @@ function dividir()
 
 	alert("la divicion es: "+dividir);
 
+
+//termine punto 7
+
+
+
+
 	
 }
-
