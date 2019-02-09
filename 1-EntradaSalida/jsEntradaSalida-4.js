@@ -4,7 +4,9 @@
 */
 function mostrar()
 {
-	var nombre= prompt("Poner algo")
+	var nombre
+
+	= prompt("Poner algo")
 
 	document.getElementById('elNombre').value= nombre
 	
