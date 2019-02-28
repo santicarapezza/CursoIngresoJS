@@ -1,11 +1,18 @@
 function mostrar()
 {
 
-	var contador=0;
-	var positivo=0;
-	var negativo=1;
+	var contador;
+	var positivo;
+	var negativo;
 	
+	contador=0;
+	positivo=0;
+	negativo=1;
+
 	var respuesta='si';
+	var queresContinuar;
+
+	queresContinuar="si"
 
 
 document.getElementById('suma').value=positivo;
