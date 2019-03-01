@@ -2,19 +2,21 @@ function mostrar()
 {
 
 	var kilometros;
-	var tcombustible;
+	var tipocombustible;
 	var contadorkilometros;
-	var contadortcombustible;
+	var contadortipocombustible;
 	var vehiculos;
 	var sumakilometros;
 	var promedioveltotal;
-	var velmin;
+	var velocidadmin;	
+	var velocidadmax;
+	var velocidadmaxsolida;
 
 	contadorkilometros=0;
-	contadortcombustible=0;
+	contadortipocombustible=0;
 	vehiculos=0;
 	sumakilometros=0;
-	velmin=0;
+	velocidadmin=0;
 
 	while(vehiculos<5)
 	{
@@ -35,17 +37,17 @@ function mostrar()
 
 
 
-		tcombustible = prompt("ingrese el tipo de combustible por s ó l.");
+		tipocombustible = prompt("ingrese el tipo de combustible por s ó l.");
 		
 
 
-		while(tcombustible!="s" && tcombustible!="l")
+		while(tipocombustible!="s" && tipocombustible!="l")
 		{
-			tcombustible = prompt("ingrese nuevamente s ó l .");
+			tipocombustible = prompt("ingrese nuevamente s ó l .");
 
-			++contadortcombustible;
+			++contadortipocombustible;
 			
-			if(contadortcombustible==2)
+			if(contadortipocombustible==2)
 			{
 				break;
 			}
@@ -56,18 +58,25 @@ function mostrar()
 
 		if(vehiculos==0)
 		{
-			velmin=kilometros;
-
+			velocidadmin=kilometros;
+			velocidadmax=kilometros;
 		}
 
-		if(kilometros<velmin)
+		if(kilometros<velocidadmin)
 		{
-			velmin=kilometros;
+			velocidadmin=kilometros;
 
 		}
 	 	
+		if(tipocombustible=="l" && kilometros>100)
+		{
+			contadortipocombustible++;
+		}
 
-
+		if(tipocombustible=="s" && kilometros>velocidadmax)
+		{
+			velocidadmaxsolida++;
+		}
 
 
 
@@ -80,9 +89,9 @@ function mostrar()
 
 	console.log("la suma todal de km es: "+sumakilometros);
 	console.log("el promedio es: "+promedioveltotal);
-	console.log("la velocidad min es: "+velmin);
-
-
+	console.log("la velocidad min es: "+velocidadmin);
+	console.log("los vehiculos que usan liquidos son: "+contadortipocombustible);
+	console.log("la velocidad mas alta con combustible solido es: "+velocidadmaxsolida);
 
 }
 
