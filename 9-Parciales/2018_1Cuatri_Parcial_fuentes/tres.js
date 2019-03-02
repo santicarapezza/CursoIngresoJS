@@ -13,8 +13,8 @@ function mostrar()
 	precio =parseInt(precio);
 	descuento =parseInt(descuento);
 
-	descuento =precio - (precio*descuento/100);
+	preciocondescuento =precio - (precio*descuento/100);
 
-	document.getElementById('preciofinal').value = preciocondescuento;
+	document.getElementById('preciofinal').value = (preciocondescuento);
 
 }
