@@ -4,7 +4,10 @@ mostrar el importe con un aumento del 10 %
 en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
+	var sueldo;
+	var aumento;
 
-//me falta el 9 y 10
-	
+	sueldo=parseInt(sueldo);
+
+	sueldo=document.getElementById('')
 }
