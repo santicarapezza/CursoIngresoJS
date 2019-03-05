@@ -1,10 +1,22 @@
 function mostrar()
 {
 
-var sexo = prompt("ingrese f ó m .");
+	var contador;
+	var sexo;
 
+	sexo = prompt("ingrese f ó m .");
+	contador = 0;
 
+	while(sexo!="f" && sexo!="m")
+	{
+		sexo = prompt("ingrese f ó m .");
 
-document.getElementById('Sexo').value=sexo;
-
+		++contador;
+		
+		if(contador==3)
+		{
+			break;
+		}
+	}
+	document.getElementById('Sexo').value=sexo;
 }//FIN DE LA FUNCIÓN

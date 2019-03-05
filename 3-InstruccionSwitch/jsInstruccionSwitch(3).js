@@ -6,7 +6,8 @@ function mostrar()
 
 //alert (mesDelAño);
 
-	switch(mesDelAño){
+	switch(mesDelAño)
+	{
 
 	case "Febrero":
 
@@ -19,13 +20,6 @@ function mostrar()
 	alert("Este mes tiene 30 o más días")
 
 	break
-
-
-
-
-
-
-
 
 	}
 	

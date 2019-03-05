@@ -1,23 +1,27 @@
 function mostrar()
 {
 
-	var numero = prompt("ingrese un número entre 0 y 10.");
+	var numero
+	var contador;
 
-		while(numero<0 || numero>10)
+	numero = prompt("ingrese un número entre 0 y 10.");
+	contador = 0
+
+	while(numero<=0 || numero>=9)
+	{
+		numero = prompt("ingrese nuevamente un número entre 0 y 10.");
+		
+		++contador
+		
+		if(contador==3);
 		{
-
-
-			= prompt("Error, ingrese un número entre 0 y 10.");
-
-
-
-
-
-
+			break;
 		}
-
-
-
-
+	}
+	
+	if(numero>=0 && numero<11)
+	{
+		document.getElementById('Numero').value=numero;
+	}
 
 }//FIN DE LA FUNCIÓN
